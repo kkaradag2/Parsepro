@@ -16,8 +16,8 @@ namespace ParsePro
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/v1/{controller}/{ClassName}"//,
-                //defaults: new { ClassName = RouteParameter.Optional }
+                routeTemplate: "api/{controller}/{className}",
+                defaults: new { className = RouteParameter.Optional }
             );
         }
     }
